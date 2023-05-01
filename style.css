@@ -7,6 +7,7 @@ body {
   font-family: Helvetica, sans-serif;
   background-color: #e8dacc;
   overflow: hidden;
+  color: #2f4858;
 }
 #hero {
   display: flex;
@@ -28,6 +29,12 @@ body {
 }
 #about a {
   text-decoration: none;
+  font-style: italic;
+  font-weight: 600;
+  color: #67847d;
+}
+#about a:hover {
+  color: #45666c;
 }
 footer {
   position: fixed;
