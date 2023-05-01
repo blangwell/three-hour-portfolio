@@ -50,10 +50,11 @@ footer p {
   height: clamp(200px, 50vw, 500px); 
   transform: rotate(-60deg) scaleX(-1);
   position: absolute;
-  margin-right: clamp(-200px, -15vw, -100px);
+  margin-right: -500px;
   right: 0;
   bottom: 0;
   z-index: -1;
+  transition: 1s ease;
 }
 #thumbsup-container img {
   object-fit: cover;
