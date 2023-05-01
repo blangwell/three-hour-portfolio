@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
+  background-color: #e8dacc;
   overflow: hidden;
 }
 #hero {
@@ -12,18 +13,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px 20px;
-  border-bottom: 1px solid black;
+  padding: 20px 20px 0;
 }
 #hero h1 {
   font-family: "Made", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
+  margin-bottom: 0;
 }
 #hero p {
   font-size: 20px;
 }
 #about {
-  padding: 20px;
+  padding: 0 20px;
 }
 #about a {
   text-decoration: none;
@@ -37,9 +38,6 @@ footer {
 footer p {
   text-align: center;
 }
-
-
-
 #thumbsup-container {
   width: clamp(200px, 50vw, 500px);
   height: clamp(200px, 50vw, 500px); 
@@ -48,7 +46,7 @@ footer p {
   margin-right: clamp(-200px, -15vw, -100px);
   right: 0;
   bottom: 0;
-  z-index: -1
+  z-index: -1;
 }
 #thumbsup-container img {
   object-fit: cover;
