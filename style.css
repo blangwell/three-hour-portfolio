@@ -2,12 +2,23 @@
   font-family: "Made";
   src: url('./assets/made-outer-sans-light.otf');
 }
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   background-color: #e8dacc;
-  overflow: hidden;
   color: #2f4858;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+main {
+  max-width: 600px;
 }
 #hero {
   display: flex;
@@ -48,16 +59,14 @@ footer {
   width: 100%;
   bottom: 0;
   box-sizing: border-box;
-}
-footer p {
   text-align: center;
 }
 #thumbsup-container {
   width: clamp(100px, 45vw, 500px);
   height: clamp(100px, 45vw, 500px); 
   transform: rotate(-60deg) scaleX(-1);
-  position: absolute;
   margin-right: -500px;
+  position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
